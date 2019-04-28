@@ -23,7 +23,7 @@ app.use(express.static(publicDirectory));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'WEATHER',
-        name: 'Antonio'
+        name: 'Antonio Ruballos'
     });
 });
 
