@@ -11,7 +11,7 @@ const forecast = function(latitude, longitude,  cb) {
         } else {
             const {currently, daily} = body;
             
-            cb(undefined, `It is currently ${currently.temperature} degrees celsius out. There is a ${currently.precipProbability}% chance of rain.`);
+            cb(undefined, `It is currently ${currently.temperature} degrees celsius out. There is a ${currently.precipProbability}% chance of rain. \n ${daily.data[0].summary} \n ${daily.summary}`);
         }
     })
 }
